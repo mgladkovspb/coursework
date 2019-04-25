@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.lp-window {
+    height: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+
+.lp-wrapper {
+    height: 100%;
+}
+
+.lp-wrapper:before {
+    background-color: #1EBEA5;
+    content: '';
+    height: 222px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.qr-code {
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
