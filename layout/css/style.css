@@ -1,11 +1,69 @@
+@import url("grid.css");
+
+/* common */
+
 html, body {
     height: 100%;
     width: 100%;
     overflow: hidden;
     padding: 0;
     margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', 'Open Sans', Helvetica, sans-serif;
 }
 
+/* Переопределение свойств user agent */
+input, textarea, select, button {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', 'Open Sans', Helvetica, sans-serif;
+}
+
+.center {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* controls */
+button,input:focus {
+    outline-style: none;
+}
+
+.btn {
+    background-color: #ecedee;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 7px 24px 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.form-control {
+    background-color: #ecedee;
+    border: 1px solid #ecedee;
+    box-sizing: border-box; 
+    color: #555555;
+    display: inline-block;
+    height: auto;
+    padding: 9px 12px 8px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+input:focus.form-control {
+    box-shadow: 0px 0px 5px 2px rgba(211,84,0,0.5);
+}
+
+.btn-danger {
+    background-color: #d35400;
+    color: #fff;
+}
+
+/* login page */
 .lp-window {
     height: 100%;
     margin-top: 100px;
@@ -22,7 +80,7 @@ html, body {
 }
 
 .lp-wrapper:before {
-    background-color: #1EBEA5;
+    background-color: #d35400;
     content: '';
     height: 222px;
     position: absolute;
@@ -36,6 +94,18 @@ html, body {
     width: 300px;
     height: 300px;
     padding-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.user-form {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-footer {
+    margin-bottom: 15px;
+    text-align: right;
 }
