@@ -1,0 +1,36 @@
+@media screen and (min-width: 1025px) {
+    .lp-wrapper {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lp-wrapper:before {
+        background-color: #d35400;
+        content: '';
+        height: 222px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .lp-window {
+        height: 100%;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px;
+        max-width: 500px;
+        background-color: #FFF;
+        border-radius: 3px;
+        box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    .qr-placeholder {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(102, 111, 116, 0.5); 
+    }
+}
+

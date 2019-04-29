@@ -1,0 +1,42 @@
+@import url("lp-lg.css");
+@import url("lp-md.css");
+@import url("lp-sm.css");
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #666f74;
+}
+
+.center {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qr-code {
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 30px 0 0;
+}
+
+.qr-description {
+    width: 255px;
+    font-size: 13px;
+}
+
+.qr-description > p {
+    margin-top: 0;
+}
+
+.form-group {
+
+}

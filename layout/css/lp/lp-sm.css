@@ -1,0 +1,11 @@
+@media screen and (max-width: 543px) {
+    .lp-wrapper {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lp-wrapper:before {
+        content: none;
+    }
+}
