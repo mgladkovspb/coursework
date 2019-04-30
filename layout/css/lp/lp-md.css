@@ -3,9 +3,65 @@
         height: 100%;
         padding: 0;
         margin: 0;
+        border: 1px solid blue;
     }
 
-    .lp-wrapper:before {
-        content: none;
+    .lp-window {
+        height: 100%;
+        width: 100%;
+        background-color: #FFF;
+    }
+
+    .logo-placeholder {
+        display: block;
+        margin-top: 10px;
+        width: 150px;
+        height: 180px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        background-image: url("../../images/logo-orange.svg");
+    }
+
+    .logo-placeholder > h3 {
+        margin: 5px 0px 10px 40px;
+        letter-spacing: 5px;
+        color: rgba(230, 126, 34, 0.5);
+    }
+
+    .form {
+        display: inline-block;
+        width: 500px;
+        padding: 25px 10px;
+        vertical-align: top;
+    }
+    
+    .qr-placeholder {
+        display: inline-block;
+        /* float: right; */
+    }
+
+    /* .qr-placeholder .center {
+        padding: 0;
+        margin: 0;
+    } */
+
+    .qr-code {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: 20px 20px;
+    }
+
+    .qr-description {
+        display: none;
+        /* width: 180px;
+        font-size: 11px; */
+    }
+    
+    .qr-description > p {
+        margin-top: 0;
     }
 }
