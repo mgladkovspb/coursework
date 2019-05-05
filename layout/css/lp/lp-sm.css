@@ -12,7 +12,7 @@
 
     .logo-placeholder {
         display: block;
-        margin-top: 10px;
+        margin-top: 30px;
         width: 150px;
         height: 180px;
     }
@@ -36,5 +36,11 @@
     .form {
         display: block;
         padding: 40px 40px;
+    }
+}
+
+@media screen and (max-height: 414px) {
+    .logo-placeholder {
+        display: none;
     }
 }

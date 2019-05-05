@@ -14,7 +14,7 @@
 
     .logo-placeholder {
         display: block;
-        margin-top: 10px;
+        margin-top: 30px;
         width: 150px;
         height: 180px;
     }
@@ -32,21 +32,16 @@
     }
 
     .form {
-        display: inline-block;
+        display: block;
         width: 500px;
-        padding: 25px 10px;
-        vertical-align: top;
+        padding: 100px 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .qr-placeholder {
-        display: inline-block;
-        /* float: right; */
+        display: none;
     }
-
-    /* .qr-placeholder .center {
-        padding: 0;
-        margin: 0;
-    } */
 
     .qr-code {
         display: block;
@@ -57,11 +52,5 @@
 
     .qr-description {
         display: none;
-        /* width: 180px;
-        font-size: 11px; */
-    }
-    
-    .qr-description > p {
-        margin-top: 0;
     }
 }
