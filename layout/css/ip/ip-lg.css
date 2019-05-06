@@ -1,0 +1,39 @@
+@media screen and (min-width: 1025px) {
+    .sidebar {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 400px;
+        background-color: #ffffff;
+    }
+
+    .map-control-br {
+        right: 10px;
+        bottom: 20px;
+        position: absolute;
+    }
+    
+    .map-control-tr {
+        right: 10px;
+        top: 20px;
+        position: absolute;
+    }
+
+    .logo {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../images/logo.svg");
+    }
+
+    /* .logo-placeholder {
+        display: block;
+        float: left;
+    } */
+
+    .sidebar-header .search-placeholder {
+        display: block;
+        padding-left: 10px;
+    }
+}

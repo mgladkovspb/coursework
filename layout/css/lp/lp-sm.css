@@ -1,14 +1,7 @@
 @media screen and (max-width: 543px) {
-    .lp-wrapper {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        border: 1px solid red;
-    }
-
-    .lp-wrapper:before {
+    /* .page-wrapper:before {
         content: none;
-    }
+    } */
 
     .logo-placeholder {
         display: block;

@@ -1,0 +1,33 @@
+@media screen and (max-width: 543px) {
+    .sidebar {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        background-color: #2b2e33;
+    }
+
+    .logo {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../images/logo.svg");
+    }
+
+    /* .logo-placeholder {
+        display: block;
+        float: left;
+    } */
+
+    .sidebar-header .search-placeholder {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .map-control-tr {
+        right: 10px;
+        top: 70px;
+        position: absolute;
+    }
+}

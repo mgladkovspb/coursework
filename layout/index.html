@@ -4,9 +4,65 @@
     <meta charset="UTF-8"/>
     <meta name="description" content="Курсовая, вёрстка."> 
     <title>Курсовая, вёрстка.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ip/ip.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
 </head>
 <body>
-    
+    <div class="page-wrapper">
+        <div id="map"></div>
+        <div class="map-control map-control-tr btn-group shadow">
+            <input class="btn" type="button" value="+" onclick="zoomIn();"/>
+            <input class="btn" type="button" value="-" onclick="zoomOut();"/>
+        </div>
+        <div class="map-control sidebar shadow">
+            <!-- header -->
+            <div class="sidebar-header shadow">
+                <!-- div class="row">
+                    <div class="col-1" -->
+                        <div class="logo-placeholder">
+                            <div class="logo center"></div>
+                        </div>
+                    <!--/div>
+                    <div class="col-11"-->
+                        <div class="search-placeholder">
+                            <input class="form-control" type="search" placeholder="Поиск"/>
+                        </div>
+                    <!--/div>
+                </div -->
+            </div>
+            <!-- header -->
+            <!-- content -->
+            <div class="sidebar-content">
+                <div class="card">
+                    <div class="card-header">234234234</div>
+                    <div class="card-content">
+                        Дополнительная информация
+                    </div>
+                    <div class="card-footer">
+                        <div class="footer-panel">
+                            <div class="panel-element">
+                                <span class="field-name">LAT:</span>
+                                <span class="field-value">59.940878</span>
+                            </div>
+                            <div class="panel-element">
+                                <span class="field-name">LNG:</span>
+                                <span class="field-value">30.334021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
