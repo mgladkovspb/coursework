@@ -8,6 +8,10 @@
         background-color: #2b2e33;
     }
 
+    .sidebar-content {
+        display: none;
+    }
+
     .logo {
         display: block;
         width: 30px;

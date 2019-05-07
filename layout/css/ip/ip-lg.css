@@ -5,7 +5,13 @@
         position: absolute;
         height: 100%;
         width: 400px;
-        background-color: #ffffff;
+        background-color: #ecedee;
+    }
+
+    .sidebar-content {
+        display: block;
+        padding: 10px;
+        background-color: #ecedee;
     }
 
     .map-control-br {

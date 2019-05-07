@@ -15,10 +15,9 @@
         background-image: url("../../images/logo.svg");
     }
 
-    /* .logo-placeholder {
-        display: block;
-        float: left;
-    } */
+    .sidebar-content {
+        display: none;
+    }
 
     .sidebar-header .search-placeholder {
         display: block;

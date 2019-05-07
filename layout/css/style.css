@@ -77,6 +77,22 @@ input:focus.form-control {
     color: #fff;
 }
 
+.text-blue {
+    color: #2980b9;
+}
+
+.text-red {
+    color: #e74c3c;
+}
+
+.text-green {
+    color: #16a085;
+}
+
+.text-yellow {
+    color: #e67e22;
+}
+
 .full-width {
     width: 100%;
 }
