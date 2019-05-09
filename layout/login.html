@@ -4,31 +4,33 @@
     <meta charset="UTF-8"/>
     <meta name="description" content="Курсовая, вёрстка."> 
     <title>Курсовая, вёрстка.</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lp/lp.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/lp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="page-wrapper">
-        <div class="logo-placeholder center">
-            <div class="logo"></div>
-            <h3>АБЗ-1</h3>
-        </div>
-        <div class="lp-window">
-            <div class="qr-placeholder">
-                <img src="images/qr-code.svg" class="qr-code"/>
-                <div class="qr-description center">
+        <div class="main-content">
+            <div class="logo center">
+                <div class="logo-image"></div>
+                <h3>АБЗ-1</h3>
+            </div>
+            <div class="qrcode">
+                <img src="images/qr-code.svg" class="qrcode-image"/>
+                <div class="qrcode-description center">
                     <p>Используйте QR код для автоматической авторизации.</p>
                 </div>
             </div>
             <form method="GET" action="index.html" class="form form-default">
                 <div class="form-group">
                     <label for="userName">Email</label>
-                    <input type="email" class="form-control" placeholder="i-am@example.com" required/>
+                    <input type="email" class="form-control backlight" placeholder="i-am@example.com" required/>
                 </div>
                 <div class="form-group">
                     <label for="userName">Пароль</label>
-                    <input type="password" class="form-control" placeholder="**********" required/>
+                    <input type="password" class="form-control backlight" placeholder="**********" required/>
                 </div>
                 <div class="form-group">
                     <br/>

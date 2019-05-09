@@ -1,0 +1,181 @@
+/* большой экран */
+@media screen and (min-width: 1025px) {
+    .page-wrapper:before {
+        background-color: #e67e22;
+        content: '';
+        height: 200px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .main-content { /* lp-window */
+        height: 100%;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px;
+        max-width: 450px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    .qrcode {
+        display: block;
+        width: 100%;
+        border-bottom: 1px groove rgba(102, 111, 116, 0.5); 
+    }
+
+    .qrcode-image {
+        display: block;
+        width: 300px;
+        height: 300px;
+        padding: 30px 0 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .qrcode-description {
+        width: 255px;
+        font-size: 13px;
+    }
+
+    .qrcode-description > p {
+        margin-top: 0;
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo-image {
+        width: 150px;
+        height: 150px;
+        background-image: url("../images/logo.svg");
+    }
+
+    .logo > h3 {
+        margin: 5px 0px 10px 40px;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form {
+        display: block;
+        padding: 40px 40px;
+    }
+}
+
+/* большой экран с малой высотой */
+@media screen and (min-width: 1025px) and (max-height: 730px) {
+    .qrcode-image {
+        display: block;
+        width: 200px;
+        height: 200px;
+        padding: 30px 0 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* среднеразмерный экран (планшет) */
+@media screen and (min-width: 544px) and (max-width: 1024px) {
+    .page-wrapper {
+        position: relative;
+    }
+
+    .main-content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        display: block;
+        width: 150px;
+        height: 180px;
+    }
+
+    .logo-image {
+        width: 150px;
+        height: 150px;
+        background-image: url("../images/logo-orange.svg");
+    }
+
+    .logo > h3 {
+        margin: 5px 0px 10px 40px;
+        letter-spacing: 5px;
+        color: rgba(230, 126, 34, 0.5);
+    }
+
+    .form {
+        display: block;
+        width: 500px;
+        padding: 60px 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .qrcode {
+        display: none;
+    }
+}
+
+/* малые экраны (телефоны) */
+@media screen and (max-width: 543px) {
+    .page-wrapper {
+        position: relative;
+    }
+
+    .main-content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        display: block;
+        width: 150px;
+        height: 180px;
+    }
+
+    .logo-image {
+        width: 150px;
+        height: 150px;
+        background-image: url("../images/logo-orange.svg");
+    }
+
+    .logo > h3 {
+        margin: 5px 0px 10px 40px;
+        letter-spacing: 5px;
+        color: rgba(230, 126, 34, 0.5);
+    }
+
+    .qrcode {
+        display: none;
+    }
+
+    .form {
+        display: block;
+        padding: 30px 10px;
+        min-width: 250px;
+    }
+}
+
+/* при повороте на телефонах */
+@media screen and (max-height: 414px) {
+    .logo {
+        display: none;
+    }
+}
