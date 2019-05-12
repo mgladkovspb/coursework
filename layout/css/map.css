@@ -22,12 +22,10 @@
     position: absolute;
 }
 
-@media screen and (max-width: 543px) {
-    .map-control-tr {
-        right: 10px;
-        top: 70px;
-        position: absolute;
-    }
+.map-control-tl {
+    left: 10px;
+    top: 20px;
+    position: absolute;
 }
 
 .map-control.btn-group .btn {
@@ -68,6 +66,26 @@
     position: absolute;
     top: -10px;
     left: -10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .map-control-tr {
+        right: 10px;
+        top: 70px;
+        position: absolute;
+    }
+
+    .map-control-tl {
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .marker {
+        display: none;
+    }
 }
 
 /* Переопределение стилей */

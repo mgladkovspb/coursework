@@ -33,6 +33,15 @@ class MyMap {
         this.markers.push(marker);
         marker.addTo(this.map);
     }
+
+    search() {
+        let searchResult = document.getElementsByClassName('sidebar-content')[0];
+        if(searchResult.classList.contains('hidden')) {
+            searchResult.classList.remove('hidden');
+        } else {
+            searchResult.classList.add('hidden');
+        }
+    }
 }
 
 class MyMarker extends L.Marker {
@@ -103,6 +112,4 @@ document.addEventListener('DOMContentLoaded', function() {
         let marker = new MyMarker(window.tracks[i].id, window.tracks[i].geo);
         window.mymap.addMarker(marker);
     }
-
-    
 }, false);
