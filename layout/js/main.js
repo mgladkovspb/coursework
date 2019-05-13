@@ -36,9 +36,12 @@ class MyMap {
 
     search() {
         let searchResult = document.getElementsByClassName('sidebar-content')[0];
+        let sidebar = document.getElementsByClassName('sidebar')[0];
         if(searchResult.classList.contains('hidden')) {
+            sidebar.classList.add('full-height');
             searchResult.classList.remove('hidden');
         } else {
+            sidebar.classList.remove('full-height');
             searchResult.classList.add('hidden');
         }
     }
