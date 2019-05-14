@@ -79,6 +79,15 @@
 
     .search-result > li {
         display: inline-block;
+        width: 240px;
+    }
+
+    .search-result > li + li > a {
+        border-top: 0;
+    }
+
+    .search-result > li > a {
+        border-bottom: 1px solid rgba(43, 46, 51, .3);
     }
 }
 
