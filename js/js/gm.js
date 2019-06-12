@@ -1,16 +1,6 @@
 'use strict';
-let ViewModel = {
-    _listeners: []
+
+function applyBindings(vm, view = document) {
+    let elements = view.querySelectorAll('[data-bind]');
 }
 
-let gm = {
-    observable: function(value) {
-        return function(value) {}
-    },
-    computed: function(fn) {
-        return fn;
-    },
-    applyBindings: function(vm, view) {
-        vm = Object.assign(vm, ViewModel);
-    }
-};
