@@ -1,10 +1,15 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', function() {
-    let vm = {
-        firstName: '',
-        lastName: ''
-    }
+let vm = {
+    firstName: 'Максим',
+    lastName: 'Гладков',
+    birthday: new Date('1979-05-04')
+}
 
-    applyBindings(vm)
+vm.fullName = function() { 
+    return this.firstName + ' ' + this.lastName; 
+}.bind(vm);
+
+document.addEventListener('DOMContentLoaded', function() {
+    gm.applyBindings(vm);
 }, false);
