@@ -11,6 +11,10 @@ html, body {
     background-color: #e2e3e4;
 }
 
+button, input:focus {
+    outline-style: none; /* отключить браузерную посдветку */
+}
+
 .page-wrapper {
     height: 100%;
     padding: 0;
