@@ -27,7 +27,9 @@ let gm = (function(){
         },
         getValidDeps (deps, key) {
             // Поддержка зависимостей в актуальном состоянии
-            return deps.filter(dep => this.subs[dep].includes(key));
+            return deps.filter(
+                dep => this.subs[dep].includes(key)
+            );
         },
         notifyDeps (deps) {
             // Уведомить всех об изменении
@@ -89,7 +91,7 @@ let gm = (function(){
         if(b === undefined) 
             return undefined;
 
-            let bvals = b.split(',');
+        let bvals = b.split(',');
         for(let i = 0; i < bvals.length; i++) {
             let propval = bvals[i].split(':')
               , prop    = propval[0].trim()
@@ -134,6 +136,7 @@ let gm = (function(){
         });
     }
 
+    // Объявление и реализация вычисляемого свойства
     function computed(object, key, fn) {
         let deps  = [];
 
@@ -157,7 +160,7 @@ let gm = (function(){
         });
     }
 
-    // часть паттерна observer, хранит сохраняет обработчики к наблюдаемым свойствам
+    // часть паттерна observer, сохраняет обработчики к наблюдаемым свойствам
     function observe (property, signalHandler) {
         if(!signals[property]) 
             signals[property] = [];
@@ -173,8 +176,12 @@ let gm = (function(){
 
     // обновляет пользовательские элементы управления
     function updateUI(model, description) {
-        description.element[description.attribute] = safeSet(model[description.property], description);
-        observe(description.property, () => description.element[description.attribute] = safeSet(model[description.property], description));
+        description.element[description.attribute] 
+            = safeSet(model[description.property], description);
+        observe(description.property, () => { 
+            description.element[description.attribute] 
+                = safeSet(model[description.property], description);
+        });
     }
 
     function safeSet(value, description) {

@@ -12,13 +12,7 @@ vm.fullName = function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     gm.applyBindings(vm);
-    gm.subscribe('firstName', () => {
-        console.log(vm.firstName);
-    });
-    gm.subscribe('lastName', () => {
-        console.log(vm.lastName);
-    });
-    gm.subscribe('birthday', () => {
-        console.log(vm.birthday);
-    });
+    gm.subscribe('firstName', () => console.log(vm.firstName));
+    gm.subscribe('lastName',  () => console.log(vm.lastName));
+    gm.subscribe('birthday',  () => console.log(vm.birthday));
 }, false);
