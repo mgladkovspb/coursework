@@ -14,7 +14,7 @@ let gm = (function(){
     let Dep = {
         target: null, // контекст вычисляемого значения
         subs: {},     // наблюдаемые свойства, от которых зависит вычисляемое значение
-        depend (deps, dep) {
+        depend: function(deps, dep) {
             // Если контекст еще не сохранен - сохранить его
             if (!deps.includes(this.target)) {
                 deps.push(this.target);
@@ -25,13 +25,13 @@ let gm = (function(){
                 Dep.subs[this.target].push(dep);
             }
         },
-        getValidDeps (deps, key) {
+        getValidDeps: function(deps, key) {
             // Поддержка зависимостей в актуальном состоянии
             return deps.filter(
                 dep => this.subs[dep].includes(key)
             );
         },
-        notifyDeps (deps) {
+        notifyDeps: function(deps) {
             // Уведомить всех об изменении
             deps.forEach(notify);
         }
